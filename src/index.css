@@ -1,0 +1,54 @@
+body {
+  background-color: #a16eb1;
+
+  /* margin: 0; */
+}
+
+.polaroid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visor-top {
+  height: 10px;
+  width: 75px;
+  background-color: #494f4f;
+  transform: perspective(10px) rotateX(10deg);
+  border-radius: 5px 5px 0 0;
+  z-index: 100;
+}
+
+.top {
+  height: 180px;
+  width: 295px;
+  background-color: #ebdcc4;
+  border-radius: 26px 26px 0 0;
+  z-index: 200;
+
+  & .flash {
+    height: 10px;
+    width: 75px;
+    background-color: #494f4f;
+    transform: perspective(10px) rotateX(10deg);
+    border-radius: 5px 5px 0 0;
+    z-index: 500;
+  }
+}
+
+.mid {
+  height: 27px;
+  width: 306px;
+  background-color: #fbf0e1;
+  transform: perspective(60px) rotateX(10deg);
+  margin-top: -1px;
+  z-index: 300;
+}
+
+.bottom {
+  height: 47px;
+  width: 319px;
+  background-color: #494f4f;
+  border-radius: 0 0 26px 26px;
+  z-index: 400;
+}
